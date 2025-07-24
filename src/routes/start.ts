@@ -364,8 +364,8 @@ export class StartPage {
         18
       );
 
-      this.container.addChild(continueButton);
       this.container.addChild(readyDemo);
+      this.container.addChild(continueButton);
       this.container.addChild(skipToTest);
       if ((await this.waitForKeyPress(skipToTest, [this.container])) === skipToTest) break;
     }
